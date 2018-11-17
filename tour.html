@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>GoRACK Data Centers</title>
+		<link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<link href="assets/css/datepicker.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="header-clickable">
+					<nav class="navbar navbar-expand-lg navbar-transparent fixed-top" id="nav-transparent">
+						<div class="container">
+						  <a class="navbar-brand logo-dark" href="index.html" id="nav-logo"></a>
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						  </button>
+						  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						    <ul class="navbar-nav ml-auto">
+						      <li class="nav-item"><a class="nav-link" href="colocation.html">Colocation</a></li>
+						      <li class="nav-item"><a class="nav-link" href="cloud.html">Private Cloud</a></li>
+						      <li class="nav-item dropdown">
+						        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          Company
+						        </a>
+						        <div class="dropdown-menu dropdown-menu-right shadow animated zoomIn" aria-labelledby="navbarDropdown">
+						          <a class="dropdown-item" href="about.html">About Us</a>
+						          <a class="dropdown-item" href="datacenters.html">Data Centers</a>
+											<a class="dropdown-item" href="tour.html">Schedule Tour</a>
+						        </div>
+						      </li>
+									<li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+									<li class="nav-item dropdown">
+						        <a class="nav-link clientportal rounded dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						          Client Portal
+						        </a>
+						        <div class="dropdown-menu dropdown-menu-right shadow animated zoomIn" aria-labelledby="navbarDropdown">
+											<div class="dropdown-form">
+												<div class="form-group">
+										      <label for="loginusername">Username</label>
+										      <input type="text" class="form-control" id="loginusername" placeholder="Username">
+										    </div>
+												<div class="form-group">
+										      <label for="loginpw">Password</label>
+										      <input type="password" class="form-control" id="loginpw" placeholder="**********">
+										    </div>
+												<div class="d-flex flex-row align-items-center">
+													<div>
+														<button class="btn btn-primary">Sign In</button>
+													</div>
+													<div class="login-form-col">
+														<a href="forgotpw.html">Forgot Password?</a>
+													</div>
+												</div>
+											</div>
+						        </div>
+						      </li>
+						    </ul>
+						  </div>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<main>
+				<div class="page-header-xl contact text-center">
+					<h1 class="text-uppercase text-white">Schedule A Tour</h1>
+					<h2 class="text-white">Schedule a tour today and come meet the team</h2>
+				</div>
+				<section class="section2">
+					<div class="container">
+            <div class="col-12 message-sent" id="message-sent">
+              Your message has successfully been sent.
+            </div>
+						<div class="alert alert-primary mb-4 d-flex flex-row align-items-center shadow">
+							<div class="tour-icon">
+								<img src="assets/img/icons/loc_marker.svg" alt="Location Marker" />
+							</div>
+							<div class="tour-location">
+								<div class="line1">800 Water St. & 421 W. Church St.</div>
+								<div class="line2">Jacksonville, Florida</div>
+							</div>
+						</div>
+						<form name="tour" method="post" action="form_process.php">
+              <input type="hidden" name="type" value="tour" />
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contactFN" name="first_name" aria-describedby="tourFN" placeholder="First Name">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contactLN" name="last_name" aria-describedby="tourLN" placeholder="Last Name">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="email" class="form-control" id="contactMail" name="email" aria-describedby="tourMail" placeholder="Email Address">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contactPhone" name="phone" aria-describedby="tourPhone" placeholder="Phone">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contactCompany" name="company" aria-describedby="tourCompany" placeholder="Company">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<select name="facility" class="custom-select">
+										<option selected>Select Facility</option>
+										<option value="1">421 W. Church St.</option>
+										<option value="2">800 Water St.</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<select name="time" class="custom-select">
+										<option selected>Select Time</option>
+										<option value="1">9:00 AM EST</option>
+										<option value="2">10:00 AM EST</option>
+										<option value="3">11:00 AM EST</option>
+										<option value="4">12:00 PM EST</option>
+										<option value="5">1:00 PM EST</option>
+										<option value="6">2:00 PM EST</option>
+										<option value="7">3:00 PM EST</option>
+										<option value="8">4:00 PM EST</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group mitigation-date">
+										<input class="form-control" id="datepicker" name="date" aria-describedby="datepicker" placeholder="Date">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="form-group contact-textarea">
+										<textarea class="form-control" id="contactMessage" name="message" rows="10" placeholder="Reason for Visit"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 text-center">
+								<div class="g-recaptcha" data-sitekey="6LevSXkUAAAAAGJS7YGinZ8cSgA5NpgdeSLlVljZ"></div>
+							</div>
+							<div class="text-center">
+								<button name="submit" class="btn btn-primary">Send Message</button>
+							</div>
+						</form>
+					</div>
+				<section>
+			</main>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-title mb-4">Contact</div>
+						<div class="footer-menu">
+							<ul>
+								<li>sales@gorack.net</li>
+								<li>Sales: +1 (888) 846 7225</li>
+								<li class="mb-4">Tech Support: +1 (904) 562 2095</li>
+								<li>GoRack Headquarters</li>
+								<li>800 Water St. Suite #202</li>
+								<li>Jacksonville, FL 32204 USA</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-title mb-4">Navigation</div>
+						<div class="footer-menu">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+								<li><a href="tour.html">Schedule A Tour</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-title mb-4">Client Portal</div>
+						<div class="footer-menu">
+							<ul>
+								<li><a href="index.html">Sign In</a></li>
+								<li><a href="about.html">Forgot Password?</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-title mb-4">Social Media</div>
+						<div class="social-media-icons">
+							<a href="" title="GoRACK on Instagram" target="_blank">
+								<img src="assets/img/icons/instagram.svg" />
+							</a>
+							<a href="" title="GoRACK on Facebook" target="_blank">
+								<img src="assets/img/icons/facebook.svg" />
+							</a>
+							<a href="" title="GoRACK on Twitter" target="_blank">
+								<img src="assets/img/icons/Twitter.svg" />
+							</a>
+							<a href="" title="GoRACK on LinkedIn" target="_blank">
+								<img src="assets/img/icons/linkedin.svg" />
+							</a>
+						</div>
+						<div class="footer-logo"></div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="row">
+						<div class="col-lg-8 col-md-6 col-12">
+							&copy; GoRACK™ LLC. All Rights Reserved.
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="footer-copyright-menu">
+								<ul>
+									<li><a href="">Terms of Service</a></li>
+									<li><a href="">Privacy Policy</a></li>
+									<li><a href="">Cookie Policy</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/datepicker.min.js"></script>
+		<script src="assets/js/ux.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script>$('#datepicker').datepicker();</script>
+    <script>$("form").submit(function(e){""===$("#g-recaptcha-response").val()&&e.preventDefault()});;</script>
+    <script>$.urlParam=function(e){return new RegExp("[?&]"+e+"=([^&#]*)").exec(window.location.href)[1]||0},"success"==$.urlParam("message")&&$("#message-sent").show(300);</script>
+	</body>
+</html>

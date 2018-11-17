@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator Pro for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="150px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2000px" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 2000 150">
+<metadata>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="SnapToEdges" value="1"/>
+<vectornator:setting key="Units" value="Pixels"/>
+<vectornator:setting key="DynamicGuides" value="1"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+<vectornator:setting key="ShowGrid" value="1"/>
+<vectornator:setting key="GridSpacing" value="50"/>
+</metadata>
+<defs/>
+<g id="Ebene 1" vectornator:layerName="Ebene 1">
+<path stroke="#ffffff" stroke-width="1.79" d="M0+51.7339L0.187278+150L1999.57+150L1999.98+54.9179C1999.98+54.9179+1875.29+28.5244+1748.55+25.1041C1621.81+21.6838+1627.04+53.0659+1501.62+53.0659C1376.21+53.0659+1371.14+21.2092+1246.89+25.1041C1122.65+28.9989+1120.31+52.7576+996.066+53.147C871.82+53.5365+874.157+27.0515+749.911+26.662C625.665+26.2725+624.629+53.305+499.082+51.5891C373.536+49.8732+372.496+19.7622+247.725+19.7984C122.955+19.8346+0+51.7339+0+51.7339Z" fill="#ffffff" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+</svg>

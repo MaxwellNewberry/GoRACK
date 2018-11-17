@@ -1,0 +1,754 @@
+/*
+====================================================================
+==== FONTS
+====================================================================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+
+@font-face {
+    font-family: 'rawline600';
+    src: url('../fonts/rawline-600.eot');
+    src: url('../fonts/rawline-600.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rawline-600.woff2') format('woff2'),
+         url('../fonts/rawline-600.woff') format('woff'),
+         url('../fonts/rawline-600.ttf') format('truetype'),
+         url('../fonts/rawline-600.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rawline800';
+    src: url('../fonts/rawline-800.eot');
+    src: url('../fonts/rawline-800.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rawline-800.woff2') format('woff2'),
+         url('../fonts/rawline-800.woff') format('woff'),
+         url('../fonts/rawline-800.ttf') format('truetype'),
+         url('../fonts/rawline-800.svg') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*
+====================================================================
+==== SCROLLBAR
+====================================================================
+*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2793FF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #155A9F;
+}
+
+/*
+====================================================================
+==== ASSETS
+====================================================================
+*/
+
+.companylogos {
+  background-image: url(../img/icons/sprite_companies.png);
+}
+
+.navbar-brand.logo-dark {
+  background-image: url(../img/logo-white.png);
+}
+
+.navbar-brand.logo-light {
+  background-image: url(../img/logo-dark2.png);
+}
+
+/*
+====================================================================
+==== ANIMATIONS
+====================================================================
+*/
+
+.animated {
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.halfslow {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.animated.delay-0-5s {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated.delay-1-5s {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animated.delay-2-5s {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*
+====================================================================
+==== RESPONSIVE BREAKPOINTS
+====================================================================
+*/
+
+/** UP TO **/
+
+@media (max-width: 575.98px) {
+  .team-members {
+    display: none;
+  }
+
+  .companies .col-6:nth-child(11) i.companylogos,
+  .companies .col-6:nth-child(12) i.companylogos {
+    margin: 0 auto;
+  }
+
+  footer .col-sm-6:nth-child(2) {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer-copyright-menu {
+    margin-top: 15px;
+  }
+
+  .alert-contactform {
+    margin-top: 3rem;
+  }
+
+  .mitigation-date,
+  .contact-textarea {
+    margin-top: 1rem;
+  }
+
+  .locations-select .nav-link {
+    padding: 1rem 2rem !important;
+  }
+
+  .locations-info-col2 {
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .timeline-left,
+  .timeline-right {
+    margin: 15px 0;
+  }
+
+  .timeline-col-1 {
+    flex: 1;
+  }
+
+  .timeline-left:before,
+  .timeline-right:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    background-color: #2793FF;
+    border: 5px solid #F5F5F5;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+  }
+
+  .timeline-left:after,
+  .timeline-right:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  .timeline-left:after,
+  .timeline-right:after {
+    border-right: 15px solid #fff;
+    left: -15px;
+  }
+
+  .timeline-left:before,
+  .timeline-right:before {
+    left: -47px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header-hero,
+  .colocation-circle,
+  .colocation-icon {
+    display: none;
+  }
+
+  .col-6:nth-child(1) .compliances,
+  .col-6:nth-child(2) .compliances {
+    margin-bottom: 3rem;
+  }
+
+  .blog .blog-post {
+    padding: 30px;
+  }
+
+  .cloud-video,
+  .cloud-faq-mobile {
+    margin-top: 2rem;
+  }
+
+  .header-column,
+  .cloud-text-mobile {
+    text-align: center;
+  }
+
+  .header-inner {
+    bottom: 50vh;
+  }
+
+  .section-features {
+    background-color: #F9F9F9;
+    padding: 75px 0;
+  }
+
+  .section-services {
+    padding: 75px 0;
+  }
+
+  .team-members-col {
+    margin-top: 3rem;
+  }
+
+  .section-ad .col-6:nth-child(2),
+  .section-ad .col-6:nth-child(3) {
+    margin-bottom: 50px;
+  }
+
+  .col-md-6:nth-child(1) .section-table,
+  .col-md-6:nth-child(2) .section-table {
+    margin-bottom: 1.5rem;
+  }
+
+  .col-12:nth-child(1) .main-features,
+  .col-12:nth-child(2) .main-features {
+    margin-bottom: 1.5rem;
+  }
+
+  footer .col-sm-6:nth-child(3),
+  footer .col-sm-6:nth-child(4) {
+    margin-top: 3rem;
+  }
+
+  .footer-copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .footer-logo {
+    display: none;
+  }
+}
+
+
+/** FROM **/
+
+@media (min-width: 576px) {
+  .companies .col-sm-4:nth-child(10) i.companylogos,
+  .companies .col-sm-4:nth-child(11) i.companylogos,
+  .companies .col-sm-4:nth-child(12) i.companylogos {
+    margin: 0 auto;
+  }
+
+  .businessinfo .team1 {
+    width: 150px;
+    margin-left: 10px;
+  }
+
+  .businessinfo .team2 {
+    width: 210px;
+    margin-left: -60px;
+  }
+
+  .businessinfo .team3 {
+    width: 150px;
+    margin-left: -90px;
+  }
+
+  .businessinfo .team1 img {
+    height: 200px;
+  }
+
+  .businessinfo .team2 img {
+    height: 220px;
+  }
+
+  .businessinfo .team3 img {
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .companies .col-md-3:nth-child(9) i.companylogos,
+  .companies .col-md-3:nth-child(10) i.companylogos,
+  .companies .col-md-3:nth-child(11) i.companylogos,
+  .companies .col-md-3:nth-child(12) i.companylogos {
+    margin: 0 auto;
+  }
+
+  .footer-copyright-menu {
+    text-align: right;
+    margin-top: -5px;
+  }
+
+  .locations-info-col1 {
+    margin-right: 100px;
+  }
+
+  .locations-info-col2 {
+    width: 300px;
+  }
+
+  .businessinfo .team1 {
+    width: 200px;
+    margin-left: -40px;
+  }
+
+  .businessinfo .team2 {
+    width: 310px;
+    margin-left: -50px;
+  }
+
+  .businessinfo .team3 {
+    width: 200px;
+    margin-left: -110px;
+  }
+
+  .businessinfo .team1 img {
+    height: 300px;
+  }
+
+  .businessinfo .team2 img {
+    height: 320px;
+  }
+
+  .businessinfo .team3 img {
+    height: 300px;
+  }
+
+  .timeline-col-1,
+  .timeline-col-3 {
+    flex: 1;
+    max-width: calc(50% - 40px);
+  }
+
+  .timeline-left:before,
+  .timeline-right:before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    background-color: #2793FF;
+    border: 5px solid #F5F5F5;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+  }
+
+  .timeline-left:after,
+  .timeline-right:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  .timeline-left:after {
+    border-left: 15px solid #fff;
+    right: -15px;
+  }
+
+  .timeline-right:after {
+    border-right: 15px solid #fff;
+    left: -15px;
+  }
+
+  .timeline-left:before {
+    right: -48px;
+  }
+
+  .timeline-right:before {
+    left: -47px;
+  }
+}
+
+/** FROM LG **/
+
+@media (min-width: 992px) {
+  .blog .blog-post {
+    padding: 70px;
+  }
+
+  .header-inner {
+    bottom: 55vh;
+  }
+
+  .navbar-light .navbar-nav .nav-link.clientportal,
+  .navbar-dark .navbar-nav .nav-link.clientportal,
+  .navbar-transparent .navbar-nav .nav-link.clientportal {
+    background-color: #2793FF;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+  }
+
+  .navbar-light .navbar-nav .nav-link.clientportal:hover,
+  .navbar-dark .navbar-nav .nav-link.clientportal:hover,
+  .navbar-transparent .navbar-nav .nav-link.clientportal:hover {
+    background-color: #2793FF;
+    color: #fff;
+  }
+
+  .dropdown-menu:before {
+    position: absolute;
+    top: -8px;
+    right: 40px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+  }
+
+  .companies .col-lg-2:nth-child(7) i.companylogos,
+  .companies .col-lg-2:nth-child(8) i.companylogos,
+  .companies .col-lg-2:nth-child(9) i.companylogos,
+  .companies .col-lg-2:nth-child(10) i.companylogos,
+  .companies .col-lg-2:nth-child(11) i.companylogos,
+  .companies .col-lg-2:nth-child(12) i.companylogos {
+    margin: 0 auto;
+  }
+
+  .section-features {
+    background-color: #F9F9F9;
+  }
+
+  .section-services {
+    padding: 105px 0 75px;
+  }
+
+  .section-table.invert {
+    padding: 60px 30px;
+    margin-top: -30px;
+  }
+
+  .colocation-icon.movingtruck {
+    float: right;
+  }
+
+  .main-features {
+    height: 100%;
+  }
+
+  .main-features-container {
+    position: absolute;
+    top: -220px;
+  }
+
+  .section-features {
+    padding-bottom: 220px;
+  }
+
+  .businessinfo .team1 {
+    width: 120px;
+    margin-left: -80px;
+  }
+
+  .businessinfo .team2 {
+    width: 150px;
+    margin-left: -50px;
+  }
+
+  .businessinfo .team3 {
+    width: 120px;
+    margin-left: -10px;
+  }
+
+  .businessinfo .team1 img {
+    height: 230px;
+  }
+
+  .businessinfo .team2 img {
+    height: 260px;
+  }
+
+  .businessinfo .team3 img {
+    height: 230px;
+  }
+}
+
+/** FROM XL **/
+
+@media (min-width: 1200px) {
+  .businessinfo .team1 {
+    width: 150px;
+    margin-left: -80px;
+  }
+
+  .businessinfo .team2 {
+    width: 180px;
+    margin-left: -50px;
+  }
+
+  .businessinfo .team3 {
+    width: 150px;
+    margin-left: -10px;
+  }
+
+  .businessinfo .team1 img {
+    height: 260px;
+  }
+
+  .businessinfo .team2 img {
+    height: 300px;
+  }
+
+  .businessinfo .team3 img {
+    height: 260px;
+  }
+}
